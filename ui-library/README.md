@@ -1,6 +1,6 @@
-# Veramind UI Library
+# VeraUI UI Library
 
-A complete, production-grade React component library for the Veramind design system. Built with **React 18/19**, **Vite**, **Tailwind CSS**, and **TypeScript**.
+A complete, production-grade React component library for the VeraUI design system. Built with **React 18/19**, **Vite**, **Tailwind CSS**, and **TypeScript**.
 
 ## Architecture
 
@@ -35,4 +35,4 @@ To publish, increment the version in `packages/react/package.json` and run `npm 
 
 ## Design System
 
-The underlying design system leverages atomic Tailwind classes, heavily customized via the internal `tailwind.config.js` to perfectly match the Veramind tokens (Plum, Lavender gradients, dynamic border-radii).
+The underlying design system leverages atomic Tailwind classes, heavily customized via the internal `tailwind.config.js` to perfectly match the VeraUI tokens (Plum, Lavender gradients, dynamic border-radii).

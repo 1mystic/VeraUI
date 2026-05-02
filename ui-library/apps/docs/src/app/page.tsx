@@ -1,7 +1,7 @@
 "use client";
 
-import { Button, Badge, Card, Input, Modal, Toggle, Alert, Accordion } from '@veramind/react';
-import '@veramind/react/styles.css';
+import { Button, Badge, Card, Input, Modal, Toggle, Alert, Accordion } from '@veraui/react';
+import '@veraui/react/styles.css';
 import { useState } from 'react';
 
 export default function Home() {
@@ -14,7 +14,7 @@ export default function Home() {
       <nav className="sidebar !hidden md:!flex">
         <div className="sidebar-logo">
           <div className="logo-mark">V</div>
-          <span className="logo-text">Veramind</span>
+          <span className="logo-text">VeraUI</span>
         </div>
         <div className="sidebar-nav">
           <span className="nav-section-label">Main</span>
@@ -31,7 +31,7 @@ export default function Home() {
       <div className="main-content flex-1 md:ml-[220px]">
         {/* Topbar */}
         <div className="topbar">
-          <div className="topbar-title">Veramind Component Library</div>
+          <div className="topbar-title">VeraUI Component Library</div>
           <div className="topbar-actions hidden sm:flex">
             <div className="icon-btn">🔔</div>
             <div className="avatar">AM</div>
@@ -148,7 +148,7 @@ export default function Home() {
                   </div>
                   <div className="form-group">
                     <label className="form-label">Email Address</label>
-                    <Input placeholder="alex@veramind.com" icon="✉" />
+                    <Input placeholder="alex@veraui.com" icon="✉" />
                   </div>
                   <div className="form-group">
                     <label className="form-label">Confirm Password</label>

@@ -1,5 +1,5 @@
 {
-  "name": "veramind-ui-workspace",
+  "name": "veraui-ui-workspace",
   "private": true,
   "workspaces": [
     "packages/*",

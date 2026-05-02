@@ -9,7 +9,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, 'src/index.ts'),
-      name: 'VeramindReact',
+      name: 'VeraUIReact',
       fileName: (format) => `index.${format === 'cjs' ? 'cjs' : 'js'}`,
       formats: ['es', 'cjs']
     },
