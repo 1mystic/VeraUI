@@ -28,9 +28,13 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
               <span style={{ fontSize: 16 }}>{item.icon}</span> {item.label}
             </Link>
           ))}
-          <span className="nav-section-label mt-4">Settings</span>
-          <a className="nav-item" href="#"><span style={{ fontSize: 16 }}>⚙</span> Preferences</a>
-          <a className="nav-item" href="#"><span style={{ fontSize: 16 }}>⊙</span> Privacy</a>
+          <span className="nav-section-label mt-4">Resources</span>
+          <a className="nav-item" href="https://github.com/veramind/veraui" target="_blank" rel="noreferrer">
+            <span style={{ fontSize: 16 }}>◎</span> GitHub
+          </a>
+          <a className="nav-item" href="/installation">
+            <span style={{ fontSize: 16 }}>⚡</span> Installation
+          </a>
         </div>
         <div className="sidebar-footer">
           <div className="list-item" style={{ padding: '12px 0 0' }}>

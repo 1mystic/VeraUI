@@ -10,13 +10,43 @@ export default function LibraryPage() {
   return (
     <div className="flex flex-col gap-12 max-w-[1200px] mx-auto w-full">
 
-      <div className="breadcrumb -mb-8">
+      <div className="breadcrumb -mb-4">
         <a href="#">VeraUI</a>
         <span className="breadcrumb-sep">›</span>
         <a href="#">Design System</a>
         <span className="breadcrumb-sep">›</span>
         <span className="current">Component Library</span>
       </div>
+
+      <section>
+        <div className="section-header">
+          <div className="section-title">Beautiful Templates</div>
+          <span className="section-tag">Showcase</span>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <a href="/" className="block">
+            <Card className="hover:-translate-y-1 transition-transform cursor-pointer border-2 border-transparent hover:border-lavender-deep">
+              <div className="h-32 bg-gradient-to-br from-[#edeaf4] to-[#dad8f9] rounded-xl mb-4 flex items-center justify-center text-3xl">⌂</div>
+              <div className="font-bold text-lg mb-1">Dashboard</div>
+              <p className="text-sm text-slate">Full admin overview with AI Copilot</p>
+            </Card>
+          </a>
+          <a href="/landing" className="block">
+            <Card className="hover:-translate-y-1 transition-transform cursor-pointer border-2 border-transparent hover:border-lavender-deep">
+              <div className="h-32 bg-gradient-to-br from-[#f4f3f8] to-[#e4e1f5] rounded-xl mb-4 flex items-center justify-center text-3xl">✦</div>
+              <div className="font-bold text-lg mb-1">Landing Page</div>
+              <p className="text-sm text-slate">Marketing site with modern heroes</p>
+            </Card>
+          </a>
+          <a href="/analytics" className="block">
+            <Card className="hover:-translate-y-1 transition-transform cursor-pointer border-2 border-transparent hover:border-lavender-deep">
+              <div className="h-32 bg-gradient-to-br from-[#d8edf9] to-[#bfdbfe] rounded-xl mb-4 flex items-center justify-center text-3xl">◈</div>
+              <div className="font-bold text-lg mb-1">Analytics View</div>
+              <p className="text-sm text-slate">Data tables and insight charts</p>
+            </Card>
+          </a>
+        </div>
+      </section>
 
       <section>
         <div className="section-header">
