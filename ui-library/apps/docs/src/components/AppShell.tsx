@@ -8,7 +8,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
   const navItems = [
     { href: '/installation', label: 'Installation', icon: 'bolt' },
     { href: '/components', label: 'Components', icon: 'category' },
-    { href: '/library', label: 'Library', icon: 'view_quilt' },
+    { href: '/sample-page', label: 'Sample Page', icon: 'view_quilt' },
     { href: 'https://github.com/veramind/veraui', label: 'GitHub', icon: 'code', external: true },
   ];
 
