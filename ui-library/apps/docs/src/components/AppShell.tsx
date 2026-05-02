@@ -9,7 +9,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
     { href: '/installation', label: 'Installation', icon: 'bolt' },
     { href: '/components', label: 'Components', icon: 'category' },
     { href: '/sample-page', label: 'Sample Page', icon: 'view_quilt' },
-    { href: 'https://github.com/veramind/veraui', label: 'GitHub', icon: 'code', external: true },
+    { href: 'https://github.com/1mystic/VeraUI', label: 'GitHub', icon: 'code', external: true },
   ];
 
   return (
