@@ -42,12 +42,14 @@ export default function LandingPage() {
         </div>
         <div className="features-grid grid grid-cols-1 md:grid-cols-3 gap-6">
           {[
-            { icon: '🧘', bg: '#ede9fe', name: 'Guided Meditation', desc: 'Personalized sessions crafted by certified mindfulness teachers.' },
-            { icon: '🌙', bg: '#fef9c3', name: 'Sleep Intelligence', desc: 'Science-backed sleep stories, body scans, and wind-down rituals.' },
-            { icon: '💨', bg: '#d1fae5', name: 'Breathwork Studio', desc: 'Box breathing, 4-7-8, coherence breathing guided by real-time biofeedback.' },
+            { icon: 'self_improvement', bg: '#ede9fe', name: 'Guided Meditation', desc: 'Personalized sessions crafted by certified mindfulness teachers.' },
+            { icon: 'nights_stay', bg: '#fef9c3', name: 'Sleep Intelligence', desc: 'Science-backed sleep stories, body scans, and wind-down rituals.' },
+            { icon: 'air', bg: '#d1fae5', name: 'Breathwork Studio', desc: 'Box breathing, 4-7-8, coherence breathing guided by real-time biofeedback.' },
           ].map((f, i) => (
             <div key={i} className="feature-card bg-white rounded-3xl p-8 shadow-[0_4px_24px_rgba(53,43,56,0.06)] border border-[rgba(218,216,249,0.4)] transition-transform hover:-translate-y-1">
-              <div className="feature-icon w-14 h-14 rounded-2xl flex items-center justify-center text-2xl mb-5" style={{ background: f.bg }}>{f.icon}</div>
+              <div className="feature-icon w-14 h-14 rounded-2xl flex items-center justify-center mb-5" style={{ background: f.bg }}>
+                <span className="material-icons" style={{ fontSize: 24, color: 'var(--plum)' }}>{f.icon}</span>
+              </div>
               <div className="feature-name text-lg font-bold mb-2">{f.name}</div>
               <div className="feature-desc text-sm text-slate leading-relaxed">{f.desc}</div>
             </div>

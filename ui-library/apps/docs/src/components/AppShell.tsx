@@ -6,11 +6,10 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
   
   const navItems = [
-    { href: '/', label: 'Dashboard', icon: '⌂' },
-    { href: '/library', label: 'Component Library', icon: '▦' },
-    { href: '/analytics', label: 'Analytics', icon: '◈' },
-    { href: '/sessions', label: 'Sessions', icon: '✿' },
-    { href: '/journal', label: 'Journal', icon: '▤' },
+    { href: '/installation', label: 'Installation', icon: 'bolt' },
+    { href: '/components', label: 'Components', icon: 'category' },
+    { href: '/library', label: 'Library', icon: 'view_quilt' },
+    { href: 'https://github.com/veramind/veraui', label: 'GitHub', icon: 'code', external: true },
   ];
 
   return (
@@ -22,28 +21,21 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
           <span className="logo-text">VeraUI</span>
         </div>
         <div className="sidebar-nav">
-          <span className="nav-section-label">Main</span>
-          {navItems.map(item => (
-            <Link key={item.href} href={item.href} className={`nav-item ${pathname === item.href ? 'active' : ''}`}>
-              <span style={{ fontSize: 16 }}>{item.icon}</span> {item.label}
-            </Link>
-          ))}
-          <span className="nav-section-label mt-4">Resources</span>
-          <a className="nav-item" href="https://github.com/veramind/veraui" target="_blank" rel="noreferrer">
-            <span style={{ fontSize: 16 }}>◎</span> GitHub
-          </a>
-          <a className="nav-item" href="/installation">
-            <span style={{ fontSize: 16 }}>⚡</span> Installation
-          </a>
-        </div>
-        <div className="sidebar-footer">
-          <div className="list-item" style={{ padding: '12px 0 0' }}>
-            <div className="list-avatar">AM</div>
-            <div className="list-info">
-              <div className="list-name" style={{ fontSize: 13 }}>Alexandra M.</div>
-              <div className="list-sub">Pro Plan</div>
-            </div>
-          </div>
+          <span className="nav-section-label">Navigation</span>
+          {navItems.map(item => {
+            if (item.external) {
+              return (
+                <a key={item.href} href={item.href} target="_blank" rel="noreferrer" className="nav-item">
+                  <span className="material-icons" style={{ fontSize: 18 }}>{item.icon}</span> {item.label}
+                </a>
+              );
+            }
+            return (
+              <Link key={item.href} href={item.href} className={`nav-item ${pathname === item.href ? 'active' : ''}`}>
+                <span className="material-icons" style={{ fontSize: 18 }}>{item.icon}</span> {item.label}
+              </Link>
+            );
+          })}
         </div>
       </nav>
 
@@ -53,11 +45,13 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
         <div className="topbar">
           <div className="topbar-title">VeraUI Workspace</div>
           <div className="topbar-search hidden lg:flex">
-            <span style={{ color: 'var(--slate)', fontSize: 14 }}>⌕</span>
-            <input placeholder="Search..." className="bg-transparent border-none outline-none text-sm text-plum w-full" />
+            <span className="material-icons" style={{ color: 'var(--slate)', fontSize: 18 }}>search</span>
+            <input placeholder="Search..." className="bg-transparent border-none outline-none text-sm text-plum w-full ml-2" />
           </div>
           <div className="topbar-actions hidden sm:flex">
-            <div className="icon-btn">🔔</div>
+            <div className="icon-btn flex items-center justify-center">
+              <span className="material-icons" style={{ fontSize: 20 }}>notifications</span>
+            </div>
             <div className="avatar">AM</div>
           </div>
         </div>
